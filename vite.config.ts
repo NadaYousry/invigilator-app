@@ -25,14 +25,14 @@ export default defineConfig({
   },
   server: {
     cors: true,
-    proxy: {
-      // Proxy requests starting with /api to your json-server
-      "/api": {
-        target: "https://invigilator-app-server.vercel.app/", // in development mode"http://localhost:3001", // Your json-server URL
-        changeOrigin: true, // Needed for virtual hosted sites
-        rewrite: (path) => path.replace(/^\/api/, ""), // Remove /api prefix when forwarding
-      },
-    },
+    // proxy: { // development mode
+    //   // Proxy requests starting with /api to your json-server
+    //   "/api": {
+    //     target: "http://localhost:3001", // Your json-server URL
+    //     changeOrigin: true, // Needed for virtual hosted sites
+    //     rewrite: (path) => path.replace(/^\/api/, ""), // Remove /api prefix when forwarding
+    //   },
+    // },
     port: 3000,
     watch: {
       ignored: ["**/db.json"], // 👈 Ignore db.json changes
