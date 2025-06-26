@@ -3,7 +3,7 @@ import type { Store } from "@reduxjs/toolkit";
 import { setError } from "@store/fetchStatusSlice";
 
 const api = axios.create({
-  baseURL: "https://invigilator-app-server.vercel.app",
+  baseURL: "https://invigilator-app-server.vercel.app/api",
   headers: {
     "Content-Type": "application/json",
   },
