@@ -124,8 +124,8 @@ function App() {
       switch (parseInt(confirmData?.keyId)) {
         case EXAM_SUBMISSIONS_STATUS_ACTIONS.paper: {
           payload = {
-            status: "Pending",
-            statusId: EXAM_SUBMISSIONS_STATUSES.pending,
+            status: "Paper",
+            statusId: EXAM_SUBMISSIONS_STATUSES.paper,
           };
           break;
         }
