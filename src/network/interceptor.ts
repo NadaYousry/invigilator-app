@@ -1,9 +1,12 @@
 import axios from "axios";
 import type { Store } from "@reduxjs/toolkit";
 import { setError } from "@store/fetchStatusSlice";
-
+console.log("ll", import.meta.env.MODE);
 const api = axios.create({
-  baseURL: "https://invigilator-app-server.vercel.app/api",
+  baseURL:
+    import.meta.env.MODE === "development"
+      ? "/api"
+      : "https://invigilator-app-server.vercel.app/api",
   headers: {
     "Content-Type": "application/json",
   },
