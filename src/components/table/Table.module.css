@@ -1,0 +1,10 @@
+.tableWrapper {
+  overflow: scroll;
+
+  background-color: var(--white-color);
+  padding: 1rem;
+}
+
+/* .tableWrapper :global .ant-table-container {
+  min-width: 60rem;
+} */

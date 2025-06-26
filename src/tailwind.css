@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* tailwind config */
+@theme {
+  --color-blue: var(--primary-color);
+  --color-light-blue: var(--light-blue);
+  --color-yellow: var(--yellow-color);
+  --color-red: var(--secondary-color);
+  --color-light-red: var(--light-red);
+  --color-white: var(--white-color);
+  --color-black: var(--black-color);
+  --color-gray: var(--gray-color);
+  --color-light-gray: var(--light-gray-color);
+  --color-light-gray-bg: var(--light-gray-bg-color);
+}
